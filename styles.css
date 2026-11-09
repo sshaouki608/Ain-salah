@@ -137,3 +137,12 @@ html.js-enabled .editorial-photo.in-view,
 .image-load-failed{background:linear-gradient(135deg,#b99a6c,#4c4937)!important}
 .site-header{backdrop-filter:blur(14px)}
 @media(max-width:650px){.hero{background-position:center}.editorial-gallery-grid,.archive-grid,.photo-grid{grid-template-columns:1fr}.editorial-photo-frame,.archive-photo>div{min-height:230px}}
+
+
+/* WhatsApp contact action */
+.contact-actions{grid-column:2/4;display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:4px}
+.whatsapp-link{display:inline-flex;align-items:center;gap:12px;background:#b28a50;color:#171b16;border:1px solid #b28a50;font-weight:700;box-shadow:0 8px 22px rgba(28,34,25,.12)}
+.whatsapp-link:hover{background:#d2b17b;border-color:#d2b17b;transform:translateY(-2px)}
+.whatsapp-number{font-size:13px;letter-spacing:.06em;color:#82745f;font-weight:600}
+html[dir="ltr"] .contact-actions{direction:ltr}
+@media(max-width:650px){.contact-actions{grid-column:2;align-items:flex-start;flex-direction:column;gap:10px}.whatsapp-link{white-space:normal}}
