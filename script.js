@@ -18,6 +18,21 @@
     slot.prepend(image);
   });
 
+  const editorialPhotos = document.querySelectorAll(".editorial-photo");
+  if ("IntersectionObserver" in window) {
+    const photoObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          photoObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    editorialPhotos.forEach(photo => photoObserver.observe(photo));
+  } else {
+    editorialPhotos.forEach(photo => photo.classList.add("in-view"));
+  }
+
   const translations = [
     [".skip-link", "Skip to content"],
     [".brand strong", "In Salah"],
