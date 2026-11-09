@@ -30,3 +30,17 @@ html[dir="ltr"] .photo-credits ul{padding-left:22px;padding-right:0}
 .photo-credits a{color:var(--gold-light);text-decoration:underline;text-underline-offset:3px}
 .photo-credits p{margin-top:10px}
 @media(max-width:650px){html[dir="ltr"] .timeline{padding-left:25px}html[dir="ltr"] .timeline-item:before{left:-31px}}
+
+/* Documented photo archive */
+.photo-archive{background:#eee6d8}
+.photo-archive .section-heading{margin-bottom:34px}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.photo-card{margin:0;background:#f8f4ec;border:1px solid #d8cbb6}
+.photo-card-image{height:250px;position:relative;overflow:hidden;background:#c7b18f}
+.photo-card-image .site-photo{transition:transform .6s ease}
+.photo-card:hover .site-photo{transform:scale(1.045)}
+.photo-card figcaption{padding:16px 18px}
+.photo-card figcaption strong,.photo-card figcaption span{display:block}
+.photo-card figcaption strong{font-family:var(--serif);font-size:21px;font-weight:400;color:var(--ink)}
+.photo-card figcaption span{font-size:11px;color:#827766;margin-top:3px}
+@media(max-width:650px){.photo-grid{grid-template-columns:1fr}.photo-card-image{height:230px}}
