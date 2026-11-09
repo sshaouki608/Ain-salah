@@ -59,3 +59,6 @@ html[dir="ltr"] .photo-credits ul{padding-left:22px;padding-right:0}
 .regional-sources{margin-top:24px;padding-top:18px;border-top:1px solid #d5cbbb;color:#756b5c;font-size:11px;line-height:2}
 .regional-sources a{color:#8b673b;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.regional-grid{grid-template-columns:1fr}.regional-card{padding:22px}}
+
+/* Hide empty photo placeholders; keep only verified photographs visible. */
+.card-art:empty{display:none!important}
