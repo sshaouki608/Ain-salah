@@ -7,7 +7,7 @@
     image.className = "site-photo";
     image.alt = slot.dataset.imageAlt || "";
     image.loading = slot.dataset.imageSlot === "hero" ? "eager" : "lazy";
-    image.src = "assets/images/" + filename;
+    image.src = /^https?:\\/\\//i.test(filename) ? filename : "assets/images/" + filename;
     image.onerror = () => image.remove();
     slot.prepend(image);
   });
