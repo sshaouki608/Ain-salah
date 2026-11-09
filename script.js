@@ -8,7 +8,13 @@
     image.alt = slot.dataset.imageAlt || "";
     image.loading = slot.dataset.imageSlot === "hero" ? "eager" : "lazy";
     image.src = /^https?:\/\//i.test(filename) ? filename : "assets/images/" + filename;
-    image.onerror = () => image.remove();
+    image.onerror = () => {
+      if (!image.dataset.fallbackTried) {
+        image.dataset.fallbackTried = "1";
+        const fileName = decodeURIComponent(String(filename).split("/").pop());
+        image.src = "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(fileName);
+      } else image.remove();
+    };
     slot.prepend(image);
   });
 
@@ -138,6 +144,13 @@
     [".unesco-note a","Read the official UNESCO file ↗"],
     [".foggara-section .regional-sources strong","Specialist studies:"],
     [".foggara-section .regional-sources a",["The foggaras of In Salah: forgotten heritage, 2013 ↗","Water sharing in the Irsan foggara, In Ghar, 2019 ↗","The craft of the water measurer in eastern Tidikelt, 2024 ↗"]]
+
+
+    [".editorial-gallery-heading span",["Visual memory","Living heritage","People and markets","Landscapes","The local region","Water memory"]],
+    [".editorial-gallery-heading strong",["From 1900 to 1913","Oasis, work and water","From the old market to today","Desert and oasis","Village and oasis","From foggara to garden"]],
+    [".editorial-photo figcaption strong",["The market at the turn of the twentieth century","The heart of the old village","Harvest in the oasis gardens","A garden in In Salah oasis","Palm groves","Water and its distribution","The market as a meeting point","The market in contemporary memory","Dunes and desert landscape","The oasis in the desert region","Village centre in 1913","The old water tower","Organised water distribution","Water sustains the gardens"]],
+    [".editorial-photo figcaption span",["1 March 1900 · Archival image from the French Overseas Archives collection","1913 · A photographic record of central In Salah","1913 · A scene of agricultural activity in the oasis","1913 · Photograph from the French archival collection","A photograph of the oasis · Xeiswolf","Field documentation of the water distribution system · Xeiswolf","1900 · Historical image connected with the memory of trade in In Salah","Photograph from In Salah · Xeiswolf","Documented desert landscapes near In Salah · Xeiswolf","Palm groves and agriculture in the local landscape · Xeiswolf","Architectural scene from the Bibliothèque nationale de France collection","Documentary photograph taken in 2011 · le mehariste","Documentary scene from In Salah · Xeiswolf","Oasis garden in an archival photograph · 1913"]],
+    [".editorial-photo figcaption a",["Image source and details ↗","Bibliothèque nationale de France collection ↗","Bibliothèque nationale de France collection ↗","View the original collection ↗","Source and licence ↗","Source and licence ↗","Image source ↗","Source and licence ↗","Source and licence ↗","Source and licence ↗","Archival collection ↗","Source and licence ↗","Source and licence ↗","Archival collection ↗"]],
 
   const originalContent = new Map();
   const applyLanguage = english => {
