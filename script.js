@@ -85,7 +85,7 @@
     [".contribute h2", "Do you have a photo or story<br><em>from In Salah?</em>"],
     [".contribute-text p", "We aim to build a visual and cultural archive that preserves the memory of this place. Contributions are reviewed and information is checked before publication."],
     [".contribute .button", "Suggest a contribution <span>↗</span>"],
-    [".contact-note", "Note: The contact email is a placeholder and must be replaced with a valid address before launch."],
+    [".contact-note", "The only contact channel on this website will be WhatsApp. The link will be enabled once a number dedicated to public contact is confirmed."],
     [".footer-brand strong", "In Salah"],
     [".footer-brand small", "Gateway to the Algerian Sahara"],
     [".footer-top > p", "An independent initiative introducing the region, its memory and its culture."],
