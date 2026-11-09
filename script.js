@@ -1,4 +1,16 @@
 (() => {
+  const imageSlots = window.AIN_SALAH_IMAGES || {};
+  document.querySelectorAll("[data-image-slot]").forEach(slot => {
+    const filename = imageSlots[slot.dataset.imageSlot];
+    if (!filename) return;
+    const image = document.createElement("img");
+    image.className = "site-photo";
+    image.alt = slot.dataset.imageAlt || "";
+    image.loading = slot.dataset.imageSlot === "hero" ? "eager" : "lazy";
+    image.src = "assets/images/" + filename;
+    image.onerror = () => image.remove();
+    slot.prepend(image);
+  });
   const menuButton = document.querySelector(".menu-toggle");
   const nav = document.querySelector("#main-nav");
   if (menuButton && nav) {
