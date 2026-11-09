@@ -52,7 +52,7 @@
 
 تُحمّل الصور الحالية مباشرة من Wikimedia Commons، ولا تُخزّن كملفات داخل المستودع في الوقت الحالي. يلزم اتصال بالإنترنت لعرضها.
 
-- صورة مدخل المنطقة/اللافتة: [In Salah عين صالح.jpg](https://commons.wikimedia.org/wiki/File:In_Salah_%D8%B9%D9%8A%D9%86_%D8%B5%D8%A7%D9%84%D8%AD.jpg) — Habib Kaki، 2017 — CC0 1.0.
+- الصورة الجوية للمدينة: [In Salah.jpg](https://commons.wikimedia.org/wiki/File:In_Salah.jpg) — Xeiswolf، 2014 — CC BY-SA 4.0.
 - صورة النخيل والواحة: [In Salah Palmerie.jpg](https://commons.wikimedia.org/wiki/File:In_Salah_Palmerie.jpg) — Xeiswolf — CC BY-SA 4.0.
 - صورة الكثبان: [In Salah Düne.jpg](https://commons.wikimedia.org/wiki/File:In_Salah_D%C3%BCne.jpg) — Xeiswolf — CC BY-SA 4.0.
 - بوابة المدينة (1991): [InSalah(1991).jpg](https://commons.wikimedia.org/wiki/File:InSalah(1991).jpg) — Albert Backer — CC BY-SA 3.0.
