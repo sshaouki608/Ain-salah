@@ -44,3 +44,17 @@
 
 مثال: إذا رفعت `my-photo.jpg` للواجهة، اكتب `hero: "my-photo.jpg",`.
 اكتب الامتداد كما هو تمامًا، وانتبه للأحرف الكبيرة والصغيرة. الصيغ المقترحة JPG وPNG وWebP. إذا كان الاسم غير موجود فستبقى الرسمة الأصلية ظاهرة.
+
+
+## الصور الفوتوغرافية الحالية ومصادرها
+
+تُحمّل بعض الصور مباشرة من Wikimedia Commons، ولا تُخزّن كملفات داخل المستودع في الوقت الحالي. يلزم اتصال بالإنترنت لعرضها.
+
+- صورة المدينة: [In Salah عين صالح 1.jpg](https://commons.wikimedia.org/wiki/File:In_Salah_%D8%B9%D9%8A%D9%86_%D8%B5%D8%A7%D9%84%D8%AD_1.jpg) — Habib Kaki — CC0.
+- صورة النخيل: [In Salah Palmerie.jpg](https://commons.wikimedia.org/wiki/File:In_Salah_Palmerie.jpg) — Xeiswolf — CC BY-SA 4.0.
+- صورة الكثبان: [In Salah Düne.jpg](https://commons.wikimedia.org/wiki/File:In_Salah_D%C3%BCne.jpg) — Xeiswolf — CC BY-SA 4.0.
+
+تُعرض صورة الحرف كتصميم زخرفي مؤقتًا حتى تتوفر صورة موثقة للحرف المحلية. لا نضع صورة عامة ونسميها حرفة من عين صالح دون تحقق.
+
+## استخدام رابط صورة بدل اسم ملف
+يمكن أن تكون القيمة في `images.js` رابطًا مباشرًا يبدأ بـ `https://`، أو اسم ملف موجودًا في `assets/images/`.
