@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="images.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -33,7 +34,7 @@
   </header>
 
   <main id="main">
-    <section class="hero" id="discover">
+    <section class="hero" id="discover" data-image-slot="hero">
       <div class="hero-grain"></div><div class="hero-sun"></div>
       <div class="hero-content reveal">
         <p class="eyebrow"><span></span> الجنوب الجزائري · الصحراء الكبرى</p>
@@ -58,15 +59,15 @@
       <div class="section-wrap">
         <div class="section-heading reveal"><div><div class="section-kicker">02 / الذاكرة والتراث</div><h2>طبقاتٌ من <em>الحكايات</em></h2></div><p>التراث ليس مباني قديمة فقط؛ إنه ذاكرة الناس، وطرائق العيش، واللغة، والحرف، والعادات التي تنتقل بين الأجيال.</p></div>
         <div class="heritage-grid">
-          <article class="heritage-card card-large reveal"><div class="card-art ksar-art"><span class="art-label">العمارة المحلية</span><div class="silhouette"></div></div><div class="card-text"><span class="card-index">01 — المكان</span><h3>القصور والعمارة الصحراوية</h3><p>تعرّف على النسيج العمراني التقليدي، ومواد البناء المحلية، وكيف تكيفت العمارة مع المناخ الصحراوي. تُضاف لاحقًا دراسات وصور موثقة لكل موقع.</p></div></article>
-          <article class="heritage-card reveal"><div class="card-art palm-art"><span class="art-label">الواحة</span><div class="palm-shape">♧</div></div><div class="card-text"><span class="card-index">02 — الأرض</span><h3>الواحات ونظام الفقارات</h3><p>الماء والزراعة عنصران أساسيان في حياة الواحة. يخصص هذا القسم لشرح أنظمة الري التقليدية وتوثيقها محليًا.</p></div></article>
-          <article class="heritage-card reveal"><div class="card-art craft-art"><span class="art-label">الحياة اليومية</span><div class="craft-symbol">✺</div></div><div class="card-text"><span class="card-index">03 — الإنسان</span><h3>الحرف والعادات</h3><p>مساحة لتوثيق الحرف، واللباس، والأغاني، والمناسبات، والذاكرة الشفوية بمشاركة أهل المنطقة.</p></div></article>
+          <article class="heritage-card card-large reveal"><div class="card-art ksar-art" data-image-slot="ksar"><span class="art-label">العمارة المحلية</span><div class="silhouette"></div></div><div class="card-text"><span class="card-index">01 — المكان</span><h3>القصور والعمارة الصحراوية</h3><p>تعرّف على النسيج العمراني التقليدي، ومواد البناء المحلية، وكيف تكيفت العمارة مع المناخ الصحراوي. تُضاف لاحقًا دراسات وصور موثقة لكل موقع.</p></div></article>
+          <article class="heritage-card reveal"><div class="card-art palm-art" data-image-slot="oasis"><span class="art-label">الواحة</span><div class="palm-shape">♧</div></div><div class="card-text"><span class="card-index">02 — الأرض</span><h3>الواحات ونظام الفقارات</h3><p>الماء والزراعة عنصران أساسيان في حياة الواحة. يخصص هذا القسم لشرح أنظمة الري التقليدية وتوثيقها محليًا.</p></div></article>
+          <article class="heritage-card reveal"><div class="card-art craft-art" data-image-slot="crafts"><span class="art-label">الحياة اليومية</span><div class="craft-symbol">✺</div></div><div class="card-text"><span class="card-index">03 — الإنسان</span><h3>الحرف والعادات</h3><p>مساحة لتوثيق الحرف، واللباس، والأغاني، والمناسبات، والذاكرة الشفوية بمشاركة أهل المنطقة.</p></div></article>
         </div>
       </div>
     </section>
 
     <section class="nature-section" id="nature">
-      <div class="nature-art"><div class="dune dune-one"></div><div class="dune dune-two"></div><div class="dune dune-three"></div><div class="nature-caption">الصحراء ليست فراغًا؛ إنها عالمٌ كامل.</div></div>
+      <div class="nature-art" data-image-slot="dunes"><div class="dune dune-one"></div><div class="dune dune-two"></div><div class="dune dune-three"></div><div class="nature-caption">الصحراء ليست فراغًا؛ إنها عالمٌ كامل.</div></div>
       <div class="nature-copy reveal"><div class="section-kicker">03 / الطبيعة والجغرافيا</div><h2>جمالٌ تصنعه<br><em>البساطة والاتساع</em></h2><p>تشكّل البيئة الصحراوية ملامح المكان وإيقاع الحياة فيه. هنا نسلّط الضوء على المشاهد الطبيعية، والواحات، والسماء الليلية، والتنوع البيئي، مع تجنب نشر مواقع حساسة أو معلومات غير متحققة.</p><a class="under-link" href="#visit">خطط لاكتشاف المكان <span>↙</span></a></div>
     </section>
 
