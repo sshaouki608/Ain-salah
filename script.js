@@ -90,16 +90,19 @@
     [".photo-credits > p", "Images are used under their respective licence terms. CC BY-SA images require creator attribution, a licence link and an indication of changes, if any."]
   ];
 
+  const originalContent = new Map();
   const applyLanguage = english => {
     translations.forEach(([selector, value]) => {
       const nodes = document.querySelectorAll(selector);
-      if (Array.isArray(value)) {
-        nodes.forEach((node, index) => {
-          if (value[index] !== undefined) node.innerHTML = value[index];
-        });
-      } else if (nodes[0]) {
-        nodes[0].innerHTML = value;
-      }
+      nodes.forEach((node, index) => {
+        if (!originalContent.has(node)) originalContent.set(node, node.innerHTML);
+        if (!english) {
+          node.innerHTML = originalContent.get(node);
+          return;
+        }
+        const translated = Array.isArray(value) ? value[index] : (index === 0 ? value : undefined);
+        if (translated !== undefined) node.innerHTML = translated;
+      });
     });
     document.documentElement.lang = english ? "en" : "ar";
     document.documentElement.dir = english ? "ltr" : "rtl";
