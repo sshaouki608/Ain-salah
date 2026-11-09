@@ -16,7 +16,7 @@
     [".skip-link", "Skip to content"],
     [".brand strong", "In Salah"],
     [".brand small", "Gateway to the Algerian Sahara"],
-    [".main-nav a", ["About", "Heritage", "Nature", "Municipalities", "Visitor guide"]],
+    [".main-nav a", ["About", "Heritage", "Gallery", "Nature", "Municipalities", "Visitor guide"]],
     [".header-cta", "Explore In Salah <span>↗</span>"],
     [".hero .eyebrow", "<span></span> Southern Algeria · The Sahara"],
     [".hero h1", "In Salah<br><em>A story told by the desert</em>"],
