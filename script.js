@@ -7,8 +7,18 @@
     image.className = "site-photo";
     image.alt = slot.dataset.imageAlt || "";
     image.loading = slot.dataset.imageSlot === "hero" ? "eager" : "lazy";
-    image.src = /^https?:\/\//i.test(filename) ? filename : "assets/images/" + filename;
+    image.decoding = "async";
+    if (slot.dataset.imageSlot === "hero") image.fetchPriority = "high";
+    const source = /^https?:\/\//i.test(filename) ? filename : "assets/images/" + filename;
+    image.src = source;
     image.onerror = () => {
+      if (!image.dataset.fallbackTried && source.includes("Special:Redirect/file/")) {
+        image.dataset.fallbackTried = "true";
+        image.src = source
+          .replace("/w/index.php?title=Special:Redirect/file/", "/wiki/Special:FilePath/")
+          .replace("&width=", "?width=");
+        return;
+      }
       image.remove();
       slot.classList.add("image-load-failed");
     };
