@@ -118,3 +118,10 @@ html[dir="ltr"] .history-note{border-right:0;border-left:3px solid var(--gold)}
 html.js-enabled .editorial-photo{opacity:0;transform:translateY(18px)}
 html.js-enabled .editorial-photo.in-view{opacity:1;transform:translateY(0);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
 @media(prefers-reduced-motion:reduce){html.js-enabled .editorial-photo{opacity:1;transform:none}html.js-enabled .editorial-photo.in-view{transition:none}}
+
+/* Critical image visibility fix: never hide gallery cards while images load */
+html.js-enabled .editorial-photo,
+html.js-enabled .editorial-photo.in-view,
+.editorial-photo{opacity:1!important;visibility:visible!important;transform:none!important}
+.editorial-photo-frame{min-height:220px}
+.editorial-photo-frame .site-photo{position:absolute!important;inset:0!important;display:block!important;opacity:1!important;visibility:visible!important;z-index:1!important}
