@@ -165,4 +165,6 @@
   } else {
     revealItems.forEach(item => item.classList.add("visible"));
   }
+
+  document.documentElement.classList.add("js-enabled");
 })();
