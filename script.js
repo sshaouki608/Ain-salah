@@ -106,10 +106,7 @@
       "<a href=\"https://commons.wikimedia.org/wiki/File:In_Salah_Palmerie.jpg\" target=\"_blank\" rel=\"noopener\">In Salah Palmerie.jpg</a> — Xeiswolf, CC BY-SA 4.0.",
       "<a href=\"https://commons.wikimedia.org/wiki/File:In_Salah_D%C3%BCne.jpg\" target=\"_blank\" rel=\"noopener\">In Salah Düne.jpg</a> — Xeiswolf, CC BY-SA 4.0."
     ]],
-    [".photo-credits > p", "Images are used under their respective licence terms. CC BY-SA images require creator attribution, a licence link and an indication of changes, if any."]
-  ];
-
-
+    [".photo-credits > p", "Images are used under their respective licence terms. CC BY-SA images require creator attribution, a licence link and an indication of changes, if any."],
     [".history-section .section-kicker","02 / ROOTS OF THE REGION"],
     [".history-section .section-heading h2","From ancient human traces<br><em>to the caravan town</em>"],
     [".history-section .section-heading > p","Tidikelt’s history is not a single date, but layers of settlement, oases, architecture and Saharan trade."],
