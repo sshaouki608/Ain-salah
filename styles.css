@@ -114,3 +114,7 @@ html[dir="ltr"] .history-note{border-right:0;border-left:3px solid var(--gold)}
 
 .nature-section>.editorial-gallery{grid-column:1/-1;width:100%;margin:0;padding:34px clamp(24px,10vw,145px) 48px;background:#ded0b5;border-top:1px solid rgba(151,119,75,.25)}
 @media(max-width:650px){.nature-section>.editorial-gallery{padding:28px 23px 36px}}
+
+html.js-enabled .editorial-photo{opacity:0;transform:translateY(18px)}
+html.js-enabled .editorial-photo.in-view{opacity:1;transform:translateY(0);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+@media(prefers-reduced-motion:reduce){html.js-enabled .editorial-photo{opacity:1;transform:none}html.js-enabled .editorial-photo.in-view{transition:none}}
