@@ -9,3 +9,24 @@
 .card-art .site-photo,.nature-art .site-photo{z-index:0}
 .card-art:after{z-index:1}
 .card-art>*:not(.site-photo),.nature-art>*:not(.site-photo){position:relative;z-index:2}
+
+/* English layout support */
+html[dir="ltr"] body{font-family:Arial,Helvetica,sans-serif}
+html[dir="ltr"] .hero-content,html[dir="ltr"] .intro-copy,html[dir="ltr"] .nature-copy,html[dir="ltr"] .card-text,html[dir="ltr"] .section-heading,html[dir="ltr"] .visit-panel,html[dir="ltr"] .contribute-text,html[dir="ltr"] .sources{text-align:left}
+html[dir="ltr"] .eyebrow{letter-spacing:.08em}
+html[dir="ltr"] .hero-side-note{left:auto;right:5%;writing-mode:vertical-rl}
+html[dir="ltr"] .hero-bottom{direction:ltr}
+html[dir="ltr"] .fact-strip div{border-left:0;border-right:1px solid #d9d0c0}
+html[dir="ltr"] .fact-strip div:last-child{border-right:0}
+html[dir="ltr"] .timeline{border-right:0;border-left:1px solid #c5a779;padding-right:0;padding-left:35px}
+html[dir="ltr"] .timeline-item:before{right:auto;left:-41px}
+html[dir="ltr"] .municipality:hover{padding-right:10px;padding-left:20px}
+html[dir="ltr"] .under-link span{margin-right:0;margin-left:14px}
+html[dir="ltr"] .hero-buttons{direction:ltr}
+html[dir="ltr"] .photo-credits ul{padding-left:22px;padding-right:0}
+.photo-credits{margin-top:18px;padding-top:12px;border-top:1px solid var(--line)}
+.photo-credits ul{margin:8px 0;padding-right:22px}
+.photo-credits li{margin:5px 0}
+.photo-credits a{color:var(--gold-light);text-decoration:underline;text-underline-offset:3px}
+.photo-credits p{margin-top:10px}
+@media(max-width:650px){html[dir="ltr"] .timeline{padding-left:25px}html[dir="ltr"] .timeline-item:before{left:-31px}}
