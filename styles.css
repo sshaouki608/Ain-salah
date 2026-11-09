@@ -62,3 +62,27 @@ html[dir="ltr"] .photo-credits ul{padding-left:22px;padding-right:0}
 
 /* Hide empty photo placeholders; keep only verified photographs visible. */
 .card-art:empty{display:none!important}
+
+.history-section{background:#f0e7d7}.history-intro{max-width:920px;margin:-18px 0 34px;color:#625e55;font-size:14px;line-height:2.2}
+.history-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.history-card{padding:28px;background:#faf6ee;border:1px solid #d9cbb4}
+.history-card>span{font-size:11px;color:#9b713d}.history-card h3{font-family:var(--serif);font-size:25px;font-weight:400;margin:10px 0}.history-card p{font-size:13px;color:#6c675d;line-height:2.1;margin:0}
+.history-note{margin-top:24px;padding:18px 20px;border-right:3px solid var(--gold);background:#e7dcc8;color:#655b4c;font-size:12px;line-height:2}
+.caravan-section{background:#f5f0e6}.caravan-layout{display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:start}
+.caravan-copy h3{font-family:var(--serif);font-size:29px;font-weight:400;margin:0 0 16px}.caravan-copy p{font-size:14px;line-height:2.15;color:#656157}
+.route-facts{background:#20251e;color:#f5f0e6;padding:12px 26px}.route-facts div{padding:18px 0;border-bottom:1px solid rgba(232,216,184,.2)}.route-facts div:last-child{border:0}
+.route-facts strong,.route-facts span{display:block}.route-facts strong{font-family:var(--serif);font-size:30px;color:#e2c18a;font-weight:400}.route-facts span{font-size:11px;color:#c4b9a5}
+.archive-1913{background:#e9dfcd}.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.archive-photo{margin:0;background:#f8f4ec;border:1px solid #d5c7b0}.archive-photo>div{height:220px;position:relative;overflow:hidden;background:#c8b99d}
+.archive-photo .site-photo{object-fit:cover;filter:grayscale(1) sepia(.12)}.archive-photo figcaption{padding:14px 17px}
+.archive-photo figcaption strong,.archive-photo figcaption span{display:block}.archive-photo figcaption strong{font-family:var(--serif);font-size:21px;font-weight:400}.archive-photo figcaption span{font-size:11px;color:#827766}
+.archive-credit{font-size:11px;line-height:2;color:#756b5c;margin:22px 0 0}
+.foggara-section{background:#e9dfcd}.foggara-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.foggara-panel{background:#f8f4ec;border:1px solid #d8cbb6;padding:26px}.foggara-icon{font-family:var(--serif);font-size:29px;color:#a77b42}
+.foggara-panel h3{font-family:var(--serif);font-size:24px;font-weight:400;margin:9px 0}.foggara-panel p{font-size:13px;color:#68645b;line-height:2.1;margin:0}
+.unesco-note{display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:center;background:#20251e;color:#f5f0e6;padding:26px 30px;margin-top:22px}
+.unesco-note>div span,.unesco-note>div strong{display:block}.unesco-note>div span{font-size:11px;color:#c9b48f}.unesco-note>div strong{font-family:var(--serif);font-size:29px;font-weight:400;color:#e2c18a}
+.unesco-note p{font-size:13px;color:#d0c7b8;line-height:2;margin:0}.unesco-note a{grid-column:2;color:#e2c18a;font-size:12px;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:800px){.history-cards,.foggara-grid{grid-template-columns:1fr}.caravan-layout{grid-template-columns:1fr}.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.archive-grid{grid-template-columns:1fr}.archive-photo>div{height:230px}.unesco-note{grid-template-columns:1fr;gap:12px;padding:23px}.unesco-note a{grid-column:1}.history-card,.foggara-panel{padding:22px}}
+html[dir="ltr"] .history-section,html[dir="ltr"] .caravan-section,html[dir="ltr"] .archive-1913,html[dir="ltr"] .foggara-section{text-align:left}
+html[dir="ltr"] .history-note{border-right:0;border-left:3px solid var(--gold)}
