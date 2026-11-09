@@ -42,6 +42,11 @@
       "Water and agriculture are central to oasis life. This section will explain and document traditional irrigation systems, including local foggaras.",
       "A space to document crafts, clothing, songs, celebrations and oral history with the participation of local residents."
     ]],
+    [".photo-archive .section-kicker", "VISUAL ARCHIVE / DOCUMENTED PHOTOGRAPHS"],
+    [".photo-archive .section-heading h2", "In Salah <em>in photographs</em>"],
+    [".photo-archive .section-heading > p", "Authentic photographs from the town and its everyday memory, with creator credits and reuse licences."],
+    [".photo-card figcaption strong", ["The town gate — 1991", "At the local market", "Water distribution"]],
+    [".photo-card figcaption span", ["Archival photograph · Albert Backer", "In Salah · 2014 · Xeiswolf", "Water system scene · 2014 · Xeiswolf"]],
     [".nature-caption", "The desert is not empty; it is a world of its own."],
     [".nature-copy .section-kicker", "03 / NATURE & GEOGRAPHY"],
     [".nature-copy h2", "Beauty shaped by<br><em>simplicity and space</em>"],
