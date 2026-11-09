@@ -9,29 +9,11 @@
     image.loading = slot.dataset.imageSlot === "hero" ? "eager" : "lazy";
     image.src = /^https?:\/\//i.test(filename) ? filename : "assets/images/" + filename;
     image.onerror = () => {
-      if (!image.dataset.fallbackTried) {
-        image.dataset.fallbackTried = "1";
-        const fileName = decodeURIComponent(String(filename).split("/").pop());
-        image.src = "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(fileName);
-      } else image.remove();
+      image.remove();
+      slot.classList.add("image-load-failed");
     };
     slot.prepend(image);
   });
-
-  const editorialPhotos = document.querySelectorAll(".editorial-photo");
-  if ("IntersectionObserver" in window) {
-    const photoObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          photoObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.14 });
-    editorialPhotos.forEach(photo => photoObserver.observe(photo));
-  } else {
-    editorialPhotos.forEach(photo => photo.classList.add("in-view"));
-  }
 
   const translations = [
     [".skip-link", "Skip to content"],
