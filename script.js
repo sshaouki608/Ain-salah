@@ -16,7 +16,7 @@
     [".skip-link", "Skip to content"],
     [".brand strong", "In Salah"],
     [".brand small", "Gateway to the Algerian Sahara"],
-    [".main-nav a", ["About", "Heritage", "Gallery", "Nature", "Desert region", "Municipalities", "Visitor guide"]],
+    [".main-nav a", ["About", "History", "Heritage", "Caravans", "Gallery", "Nature", "Desert region", "Municipalities", "Visitor guide"]],
     [".header-cta", "Explore In Salah <span>↗</span>"],
     [".hero .eyebrow", "<span></span> Southern Algeria · The Sahara"],
     [".hero h1", "In Salah<br><em>A story told by the desert</em>"],
@@ -105,6 +105,39 @@
     ]],
     [".photo-credits > p", "Images are used under their respective licence terms. CC BY-SA images require creator attribution, a licence link and an indication of changes, if any."]
   ];
+
+
+    [".history-section .section-kicker","02 / ROOTS OF THE REGION"],
+    [".history-section .section-heading h2","From ancient human traces<br><em>to the caravan town</em>"],
+    [".history-section .section-heading > p","Tidikelt’s history is not a single date, but layers of settlement, oases, architecture and Saharan trade."],
+    [".history-intro p","An academic study published in 2025 on the eastern Tidikelt ksour states that people inhabited this region in prehistoric times, based on cultural remains found there. Its abstract does not identify the precise sites or dates, so this is presented as a research lead requiring further archaeological documentation."],
+    [".history-card h3",["Prehistory","Medieval exchange routes","A nineteenth-century trade centre"]],
+    [".history-card > span",["Early roots","Middle Ages","Nineteenth century"]],
+    [".history-card p",["Cultural remains in Tidikelt open an important field of research into early human presence in the Sahara. Specialist surveys are needed to document sites and establish their age and context.","Caravan movement between the Sahara and the Sahel helped settlement and exchange. Travellers also carried architectural knowledge and techniques adapted to local materials and desert conditions.","A historical study describes In Salah as the capital of Tidikelt and a meeting point for merchants, commercial caravans and pilgrimage routes from different directions."]],
+    [".history-note","<strong>Historical note:</strong> We do not attribute Roman remains, ancient kingdoms or specific foundation dates to In Salah without archaeological evidence or a published source."],
+    [".caravan-section .section-kicker","03 / DESERT ROUTES"],
+    [".caravan-section .section-heading h2","When caravans were<br><em>the arteries of life</em>"],
+    [".caravan-section .section-heading > p","In Salah’s Saharan location made it a meeting point between Maghrebi markets, oases, the Hoggar and the Sahel."],
+    [".caravan-copy h3","A station between north and south"],
+    [".caravan-copy p",["According to an academic study published in the journal Aasour Al Jadida in 2020, In Salah held an important commercial position in Tidikelt during the nineteenth century and served as a meeting point for trade and pilgrimage caravans.","The study describes a Ghadames–In Salah route taking about 22 days, a route from Algiers to In Salah taking about 23 days, and a journey from In Salah to Timbuktu lasting between 20 and 30 days. These are historical estimates, not modern travel times.","Caravans carried varied goods, including gold, textiles, household utensils and local products. Dates were among the important resources of the oases, used at home as well as for trade and sale."]],
+    [".route-facts span",["Ghadames → In Salah, according to the study","Algiers → In Salah, according to the study","In Salah → Timbuktu, according to the study"]],
+    [".archive-1913 .section-kicker","HISTORICAL ARCHIVE / 1913"],
+    [".archive-1913 .section-heading h2","In Salah more than a century ago<br><em>through the camera lens</em>"],
+    [".archive-1913 .section-heading > p","Four archival photographs from the Bibliothèque nationale de France collection document the village centre, oasis and agricultural work in In Salah in 1913."],
+    [".archive-photo figcaption strong",["Village centre","Harvest in the gardens","Preparing garden land","An oasis garden","The old water tower","The old barracks building"]],
+    [".archive-photo figcaption span",["In Salah · 1913","The oasis · 1913","Agricultural work · 1913","In Salah · 1913","Documentary photograph · 2011","Documentary photograph · 2011"]],
+    [".archive-credit","1913 photographs: “7 photographs of the Algerian Sahara, mainly In Salah”, held by the Bibliothèque nationale de France, Société de Géographie department, public domain with attribution. The other two photographs were taken by le mehariste in 2011 under CC BY 3.0."],
+    [".foggara-section .section-kicker","05 / WATER ENGINEERING & COMMUNITY"],
+    [".foggara-section .section-heading h2","The foggara…<br><em>desert ingenuity</em>"],
+    [".foggara-section .section-heading > p","The foggara is more than a water channel: it is precise engineering and a social and economic system for managing and sharing a vital resource."],
+    [".foggara-panel h3",["How does it work?","Who is the water measurer?","Rules of fairness and sharing"]],
+    [".foggara-panel p",["Underground channels are dug to collect groundwater and carry it by natural gradient towards oases and gardens, reducing the need for continuous mechanical pumping. A study of In Salah foggaras describes channels dug along the southern edge of the Tadmaït Plateau to capture water from the Continental Intercalary aquifer.","The water measurer holds specialist knowledge for calculating and distributing water shares and maintaining distribution tools and irrigation channels. The role forms part of a wider system involving rights holders, workers, witnesses and local experts.","Water shares are calculated and distributed under established rules, and rights are recorded to reduce disputes and ensure water reaches gardens. A study of the Irsan foggara in In Ghar describes a local organisation for measuring and distributing water that dates back many centuries."]],
+    [".unesco-note>div span","International recognition"],
+    [".unesco-note>div strong","2018 · UNESCO"],
+    [".unesco-note p","UNESCO inscribed the knowledge and skills of foggara water measurers in Touat and Tidikelt on its List of Intangible Cultural Heritage in Need of Urgent Safeguarding. Its file notes that this knowledge is threatened by declining practice and weaker transmission between generations."],
+    [".unesco-note a","Read the official UNESCO file ↗"],
+    [".foggara-section .regional-sources strong","Specialist studies:"],
+    [".foggara-section .regional-sources a",["The foggaras of In Salah: forgotten heritage, 2013 ↗","Water sharing in the Irsan foggara, In Ghar, 2019 ↗","The craft of the water measurer in eastern Tidikelt, 2024 ↗"]]
 
   const originalContent = new Map();
   const applyLanguage = english => {
